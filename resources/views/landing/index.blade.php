@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calmy | Home</title>
+    <title>Calmy | Beranda</title>
     <link rel="stylesheet" href="/public/css/style.css" />
     <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
     @vite('resources/css/app.css')
@@ -37,26 +37,23 @@
         <div class="flex flex-row gap-12">
           <ul class="flex flex-row gap-x-8 items-center">
             <li class="text-lg text-primary font-bold">
-              <a href="index.html">Home</a>
+              <a href="index.html">Beranda</a>
             </li>
             <li class="text-lg text-black hover:text-primary">
-              <a href="features.html">Features</a>
+              <a href="features.html">Fitur</a>
             </li>
             <li class="text-lg text-black hover:text-primary">
-              <a href="community.html">Community</a>
+              <a href="community.html">Komunitas</a>
             </li>
-            <li class="text-lg text-black hover:text-primary">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="text-lg text-black hover:text-primary">
-              <a href="about.html">About</a>
-            </li>
+            {{-- <li class="text-lg text-black hover:text-primary">
+              <a href="about.html">Tentang</a>
+            </li> --}}
           </ul>
           <a
-            href="signin.html"
+            href="{{ route('landing.signin') }}"
             class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black"
           >
-            Get Started
+            Masuk
           </a>
         </div>
       </nav>
@@ -67,43 +64,29 @@
       <div class="w-1/2 h-screen flex flex-col p-6 justify-center">
         <h2 class="text-xl font-bold pt-10">#GET TO KNOW ABOUT CALMY</h2>
         <h1 class="text-[42px] font-extrabold">
-          Let’s be <span class="text-primary"> Calmy’s Friends</span> and Make
-          Ourself
-          <span class="text-primary">More Meaningful</span>
+          Ayo Jadi <span class="text-primary"> Sahabat Calmy</span> dan Buat Dirimu
+          <span class="text-primary">Lebih Berarti</span>
         </h1>
         <p class="text-base pt-6 text-justify">
-          Calmy is an Anxiety Disorder Education and Consultation Platform with
-          talk therapy chatbot uses Artificial Intelligence for undergraduate
-          students. Calmy available for both Android and iOS. Get it now and
-          let’s be friends :D
+            Calmy merupakan platform edukasi dan konsultasi Anxiety Disorder dengan chatbot talk therapy menggunakan Artificial Intelligence untuk mahasiswa. Calmy tersedia aplikasi mobile untuk Android. Ayo dapatkan sekarang!:D
         </p>
         <div class="flex flex-row gap-x-8 pt-8">
           <a href="#">
             <div
               class="flex flex-row bg-black px-6 py-2 rounded-xl gap-x-4 items-center hover:bg-grey"
             >
-              <img src="/public/icons/google-play.svg" alt="Play" width="32px" />
+              <img src="{{url('/icons/google-play.svg')}}" alt="Play" width="32px" />
               <div class="flex flex-col text-white">
                 <p class="text-xs">GET IT ON</p>
                 <p class="font-medium">Google Play</p>
               </div>
             </div>
           </a>
-          <a href="#">
-            <div
-              class="flex flex-row bg-black px-6 py-2 rounded-xl gap-x-4 items-center hover:bg-grey"
-            >
-              <img src="/public/icons/apple.svg" alt="Play" width="32px" />
-              <div class="flex flex-col text-white">
-                <p class="text-xs">DOWNLOAD ON</p>
-                <p class="font-medium">App Store</p>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
       <div class="w-1/2 h-screen p-2 items-center pt-10">
-        <img src="/public/images/mockup-home.png" alt="" />
+        {{-- <img src="/public/images/mockup-home.png" alt="" /> --}}
+        <img src="{{url('/images/mockup-home.png')}}" alt="Image"/>
       </div>
     </section>
     <!-- SECTION HERO END -->
@@ -113,11 +96,9 @@
       <div class="flex flex-col items-center pt-20 pb-10">
         <div>
           <h2 class="text-sm font-bold text-center">#WE’LL START FROM HERE</h2>
-          <h1 class="text-3xl font-extrabold text-center">OUR FEATURES</h1>
+          <h1 class="text-3xl font-extrabold text-center">FITUR APLIKASI</h1>
           <p class="text-base text-center px-40 py-2">
-            Calmy offers various exciting features for you. All of Calmy's
-            features will help you get to know more about Anxiety Disorder,
-            prevent its symptoms, and assist in managing your symptoms
+            Calmy menyediakan beraram fitur menarik untuk kamu. Semua fitur Calmy akan membantu kamu untuk lebih tahu tentang Anxiety Disorder, cara mencegah, dan membantu kamu dalam mengelola gejala.
           </p>
         </div>
         <div class="flex flex-row w-screen">
@@ -125,24 +106,11 @@
           <div
             class="border-2 border-white bg-gradient-to-t from-white to-transparent w-1/3 p-6 m-6 rounded-xl"
           >
-            <img
-              src="/public/images/feature-chatbot.svg"
-              alt="Chatbot"
-              width="96px"
-            />
-            <h3 class="text-base font-bold pt-6">Voice Chatbot</h3>
+        <img src="{{url('/images/feature-chatbot.svg')}}" alt="Chatbot"width="96px"/>
+            <h3 class="text-base font-bold pt-6">Chatbot</h3>
             <p class="text-sm pb-6 text-justify">
-              Main feature of Calmy, which is a chat feature with a bot that is
-              integrated with Artificial Intelligence. In this feature, users
-              will be given a different experience by...
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis officia deserunt mollit anim id est laborum.
             </p>
-            <div class="flex flex-row justify-end">
-              <a
-                href="#"
-                class="bg-primary px-4 py-2 rounded-full text-white text-sm hover:bg-primaryDark"
-                >Read More</a
-              >
-            </div>
           </div>
           <!-- FEATURE CARD CHATBOT END -->
 
@@ -151,23 +119,14 @@
             class="border-2 border-white bg-gradient-to-t from-white to-transparent w-1/3 p-6 m-6 rounded-xl"
           >
             <img
-              src="/public/images/feature-lessons.svg"
+              src="{{url('/images/feature-lessons.svg')}}"
               alt="Chatbot"
               width="96px"
             />
             <h3 class="text-base font-bold pt-6">Lessons</h3>
             <p class="text-sm pb-6 text-justify">
-              Contains various materials or complete information about mental
-              health disorders, anxiety disorders. In this section, users will
-              be presented with material equipped...
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis officia deserunt mollit anim id est laborum.
             </p>
-            <div class="flex flex-row justify-end">
-              <a
-                href="#"
-                class="bg-primary px-4 py-2 rounded-full text-white text-sm hover:bg-primaryDark"
-                >Read More</a
-              >
-            </div>
           </div>
           <!-- FEATURE CARD LESSONS END -->
 
@@ -176,31 +135,22 @@
             class="border-2 border-white bg-gradient-to-t from-white to-transparent w-1/3 p-6 m-6 rounded-xl"
           >
             <img
-              src="/public/images/feature-exercises.svg"
+              src="{{url('/images/feature-exercises.svg')}}"
               alt="Chatbot"
               width="96px"
             />
             <h3 class="text-base font-bold pt-6">Exercises</h3>
             <p class="text-sm pb-6 text-justify">
-              Provides various recommendations for positive activity choices
-              that can help users maintain mental health. The activities
-              provided can also help users to build...
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis officia deserunt mollit anim id est laborum.
             </p>
-            <div class="flex flex-row justify-end">
-              <a
-                href="#"
-                class="bg-primary px-4 py-2 rounded-full text-white text-sm hover:bg-primaryDark"
-                >Read More</a
-              >
-            </div>
           </div>
           <!-- FEATURE CARD EXERCISES END -->
         </div>
-        <a href="#">
+        {{-- <a href="#">
           <div class="flex flex-row justify-end w-screen px-6 items-center">
             <p class="text-base pr-2">See All Features</p>
             <img src="/public/icons/arrow-right.svg" alt="" width="24px" /></div
-        ></a>
+        ></a> --}}
       </div>
     </section>
     <!-- SECTION FEATURES END -->
@@ -209,7 +159,7 @@
     <section class="flex flex-row w-screen h-screen px-6">
       <div class="w-1/2 p-2 items-center pt-24 flex flex-row justify-center">
         <img
-          src="/public/images/banner-landing-community.png"
+          src="{{url('/images/banner-landing-community.png')}}"
           alt=""
           width="72%"
         />
@@ -217,122 +167,20 @@
       <div class="w-1/2 h-screen flex flex-col p-6 justify-center">
         <h2 class="text-xl font-bold pt-10">#YOU’RE NOT ALONE</h2>
         <h1 class="text-[42px] font-extrabold">
-          FIND NEW FRIENDS ON CALMY COMMUNITY
+          CARI TEMAN BARU DI CALMY COMMUNITY
         </h1>
         <p class="text-base pt-6 text-justify">
-          Join our vibrant community today, discover valuable connections,
-          chance to make new friends who share your interests, and help your
-          problems.
+            Gabung komunitas kami sekarang, memperluas koneksi, kesempatan untuk mendapatkan teman baru untuk saling berbagi cerita, dan membantu masalah kamu.
         </p>
         <a
           href="#"
           class="bg-primary px-12 py-3 rounded-full w-fit mt-12 text-white hover:bg-primaryDark"
         >
-          Join Now</a
+          Bergabung Sekarang</a
         >
       </div>
     </section>
     <!-- SECTION COMMUNITY END -->
-
-    <!-- SECTION VOLUNTEER START -->
-    <section class="flex flex-row w-screen h-screen px-6 bg-bgDark">
-      <div class="w-1/2 h-screen flex flex-col p-6 justify-center">
-        <h2 class="text-xl font-bold pt-10">#SHARE MORE HAPPINESS</h2>
-        <h1 class="text-[42px] font-extrabold">
-          BECOME VOLUNTEER & HELP OUR FRIENDS
-        </h1>
-        <p class="text-base pt-6 text-justify">
-          Become a volunteer and make a meaningful difference in lives of those
-          battling anxiety disorder. Your compassion and support can be a
-          lifeline for others, offering them hope and understanding during their
-          journey to recovery.
-        </p>
-        <a
-          href="#"
-          class="bg-primary px-12 py-3 rounded-full w-fit mt-12 text-white hover:bg-primaryDark"
-        >
-          Learn More</a
-        >
-      </div>
-      <div class="w-1/2 flex flex-col justify-center items-center">
-        <img
-          src="/public/images/banner-volunteer.png"
-          alt="Volunteer"
-          width="50%"
-        />
-        <div class="w-1/2 bg-white p-4 flex flex-col rounded-b-xl">
-          <div class="flex flex-row gap-x-2">
-            <img
-              src="/public/images/profile-volunteer.png"
-              alt="Profile"
-              width="25%"
-            />
-            <div class="flex flex-col justify-center">
-              <h3 class="text-sm font-bold">Olieter Rima Cassie, S.Psi.</h3>
-              <p class="text-sm">Psychologist</p>
-            </div>
-          </div>
-          <p class="text-sm text-justify pt-3">
-            Hello, my name is Olieter Rima Cassie, S.Psi., you can call me Olie.
-            I am a psychologist graduated from Unggul University in 2019. I have
-            helped many...
-          </p>
-          <div class="flex flex-row pt-6 pb-4 gap-x-2 items-center">
-            <img src="/public/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/public/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/public/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/public/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/public/icons/star-inactive.svg" alt="Star" width="12%" />
-            <p>(4,0)</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION VOLUNTEER END -->
-
-    <!-- SECTION BLOG START -->
-    <section class="flex flex-col w-screen pb-32 px-6">
-      <div class="flex flex-col items-center pt-32 pb-10">
-        <div class="w-screen">
-          <h2 class="text-sm font-bold text-center">#LEARN WITH US</h2>
-          <h1 class="text-3xl font-extrabold text-center">OUR BLOG</h1>
-        </div>
-      </div>
-      <div class="flex flex-row justify-around">
-        <div
-          class="w-[48%] p-4 bg-gradient-to-tr from-transparent to-white border-2 border-white rounded-xl flex flex-row gap-x-4"
-        >
-          <img src="/public/images/blog-1.svg" alt="Blog" width="80%" />
-          <div class="flex flex-col justify-center gap-y-4">
-            <h3 class="text-lg font-bold">Separation Anxiety</h3>
-            <p class="text-base text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna...
-            </p>
-            <a href="#" class="text-sm underline text-right">READ MORE</a>
-          </div>
-        </div>
-        <div
-          class="w-[48%] p-4 bg-gradient-to-tr from-transparent to-white border-2 border-white rounded-xl flex flex-row gap-x-4"
-        >
-          <img src="/public/images/blog-1.svg" alt="Blog" width="80%" />
-          <div class="flex flex-col justify-center gap-y-4">
-            <h3 class="text-lg font-bold">Interpersonal Therapy</h3>
-            <p class="text-base text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna...
-            </p>
-            <a href="#" class="text-sm underline text-right">READ MORE</a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="flex flex-row justify-end pt-12 items-center">
-        <p class="text-base pr-2">See All Blogs</p>
-        <img src="/public/icons/arrow-right.svg" alt="" width="24px"
-      /></a>
-    </section>
-    <!-- SECTION BLOG END -->
-
     <!-- FOOTER START -->
     <footer>
       <div
@@ -360,20 +208,17 @@
           </div>
           <ul class="flex flex-row gap-x-8 items-center">
             <li class="text-base text-primary font-bold">
-              <a href="index.html">Home</a>
+              <a href="index.html">Beranda</a>
             </li>
             <li class="text-base text-black hover:text-primary">
-              <a href="features.html">Features</a>
+              <a href="features.html">Fitur</a>
             </li>
             <li class="text-base text-black hover:text-primary">
-              <a href="community.html">Community</a>
+              <a href="community.html">Komunitas</a>
             </li>
-            <li class="text-base text-black hover:text-primary">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="text-base text-black hover:text-primary">
-              <a href="about.html">About</a>
-            </li>
+            {{-- <li class="text-base text-black hover:text-primary">
+              <a href="about.html">Tentang</a>
+            </li> --}}
           </ul>
           <div class="flex flex-row gap-x-6">
             <a href="#">
@@ -449,7 +294,7 @@
           </div>
         </div>
         <hr class="bg-white h-[2px]" />
-        <p class="text-center">©️2023 • Made With ♥️ by Tiwai</p>
+        <p class="text-center">©️2024 • Made With ♥️ by Tiwai</p>
       </div>
     </footer>
     <!-- FOOTER END -->
